@@ -1,3 +1,79 @@
 /*
  * * My website will be build with CSS float & clear for recent computer screens
 */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial;
+  }
+
+/*#region HEADER*/
+
+header {
+    /*TODO: choose some fonts*/
+    background-color: gray;
+    height: 100px;
+}
+
+header h1 {
+    /*TODO: better website name*/
+    float: left;
+    height: 100%;
+}
+
+header img {
+    /*TODO: choose a logo*/
+    float: right;
+}
+
+/*#endregion*/
+
+/*#region NAV*/
+
+nav {
+    background-color: lightgray;
+}
+
+.tablink{
+    background-color: #999999;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover{
+    background-color: lightslategrey;
+}
+
+/*#endregion*/
+
+/*#region MAIN*/
+
+/*TODO: Add main style*/
+
+/*#endregion*/
+
+/*#region FOOTER*/
+
+footer{
+    background-color: gray;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+/*#endregion*/
+
