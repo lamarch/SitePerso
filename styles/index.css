@@ -16,14 +16,16 @@ body, html {
 
 header {
     /*TODO: choose some fonts*/
-    background-color: gray;
-    height: 100px;
+    background-color: #999;
+    overflow: hidden;
 }
 
 header h1 {
     /*TODO: better website name*/
     float: left;
     height: 100%;
+    margin-left: 50px;
+    padding-top: 25px;
 }
 
 header img {
@@ -36,23 +38,26 @@ header img {
 /*#region NAV*/
 
 nav {
-    background-color: lightgray;
+    overflow: hidden;
 }
 
 .tablink{
-    background-color: #999999;
-    color: white;
+    background-color: #ccc;
+    color: black;
     float: left;
     border: none;
     outline: none;
     cursor: pointer;
     padding: 15px;
-    font-size: 17px;
+    font-size: 19px;
     width: 25%;
+    transition: .3s;
+    border-bottom: 3px solid transparent;
 }
 
 .tablink:hover{
-    background-color: lightslategrey;
+    background-color: #aaa;
+    border-bottom: red 3px solid;
 }
 
 /*#endregion*/
@@ -61,12 +66,29 @@ nav {
 
 /*TODO: Add main style*/
 
+main{
+    height: 80%;
+}
+
+.tabcontent{
+    padding: 100px 20px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+#Home {background-color: red;}
+#Presentation {background-color: green;}
+#Hobbies {background-color: blue;}
+#Other {background-color: orange;}
+
 /*#endregion*/
 
 /*#region FOOTER*/
 
 footer{
-    background-color: gray;
+    background-color: #999;
     position: fixed;
     left: 0;
     bottom: 0;

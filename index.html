@@ -20,20 +20,45 @@
             <!--*The page design will be based on full page tabs from https://www.w3schools.com/howto/howto_js_full_page_tabs.asp-->
             <!--? List? -->
 
-            <button class="tablink" id="defaultOpen">Accueil</button>
-            <button class="tablink" id="defaultOpen">Présentation</button>
-            <button class="tablink" id="defaultOpen">Passions</button>
-            <button class="tablink" id="defaultOpen">Autre</button>
+            <button class="tablink" id="defaultOpen" onclick="openPage('Home', this)">Accueil</button>
+            <button class="tablink" onclick="openPage('Other', this)">Autres</button>
+            <button class="tablink" onclick="openPage('Presentation', this)">Présentation</button>
+            <button class="tablink" onclick="openPage('Hobbies', this)">Passions</button>
 
         </nav>
 
         <main>
             <!--!Put here main content of the page in <section> & <article> -->
+            <section class="tabcontent" id="Home">
+                <!--*Home page-->
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere laudantium maiores numquam beatae eius tenetur inventore sit illo nulla. Velit suscipit placeat asperiores voluptatum harum vitae ad deserunt dolor dolorem, animi dolore ratione sunt quae maiores doloribus facere nesciunt? Unde vel velit totam, optio nesciunt accusamus reiciendis enim vero amet.</p>
+
+            </section>
+
+            <section class="tabcontent" id="Presentation">
+                <!--*Presentation page-->
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere laudantium maiores numquam beatae eius tenetur inventore sit illo nulla. Velit suscipit placeat asperiores voluptatum harum vitae ad deserunt dolor dolorem, animi dolore ratione sunt quae maiores doloribus facere nesciunt? Unde vel velit totam, optio nesciunt accusamus reiciendis enim vero amet.</p>
+
+            </section>
+
+            <section class="tabcontent" id="Hobbies">
+                <!--*Hobbies page-->
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere laudantium maiores numquam beatae eius tenetur inventore sit illo nulla. Velit suscipit placeat asperiores voluptatum harum vitae ad deserunt dolor dolorem, animi dolore ratione sunt quae maiores doloribus facere nesciunt? Unde vel velit totam, optio nesciunt accusamus reiciendis enim vero amet.</p>
+
+            </section>
+
+            <section class="tabcontent" id="Other">
+                <!--*Other infos page-->
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere laudantium maiores numquam beatae eius tenetur inventore sit illo nulla. Velit suscipit placeat asperiores voluptatum harum vitae ad deserunt dolor dolorem, animi dolore ratione sunt quae maiores doloribus facere nesciunt? Unde vel velit totam, optio nesciunt accusamus reiciendis enim vero amet.</p>
+
+            </section>
         </main>
 
         <footer>
             <!--!Put here the footer content-->
             <h5>Paul Marchal - Tout droits réservés</h5>
         </footer>
+
+        <script src="scripts/main.js"></script>
     </body>
 </html>
