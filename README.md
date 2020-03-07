@@ -12,3 +12,9 @@ Un petit site web personnel que j'ai créé en SNT.
     
 - [ ] JS
     - [ ] dynamisation du site
+
+## pages
+- [ ] Accueil
+- [ ] Présentation
+- [ ] Passions
+- [ ] Autre
