@@ -21,37 +21,50 @@
 
             <button class="tablink" id="defaultOpen" onclick="openPage('Home', this)">Accueil</button>
             <button class="tablink" onclick="openPage('Presentation', this)">Présentation</button>
+            <button class="tablink" onclick="openPage('Career', this)">Parcours scolaire & professionnel</button>
             <button class="tablink" onclick="openPage('Hobbies', this)">Passions</button>
             <button class="tablink" onclick="openPage('Programming', this)">Programmation</button>
-            <button class="tablink" onclick="openPage('Career', this)">Parcours scolaire & professionnel</button>
             <button class="tablink" onclick="openPage('Other', this)">Autres</button>
         </nav>
 
         <main>
             <!--!Put here main content of the page in <section> & <article> -->
+                
             <section class="tabcontent" id="Home">
                 <!--*Home page-->
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere laudantium maiores numquam beatae eius tenetur inventore sit illo nulla. Velit suscipit placeat asperiores voluptatum harum vitae ad deserunt dolor dolorem, animi dolore ratione sunt quae maiores doloribus facere nesciunt? Unde vel velit totam, optio nesciunt accusamus reiciendis enim vero amet.</p>
-
+                <iframe class="tabcontent-iframe" src="iframes/home/">
+                </iframe>
             </section>
 
             <section class="tabcontent" id="Presentation">
                 <!--*Presentation page-->
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere laudantium maiores numquam beatae eius tenetur inventore sit illo nulla. Velit suscipit placeat asperiores voluptatum harum vitae ad deserunt dolor dolorem, animi dolore ratione sunt quae maiores doloribus facere nesciunt? Unde vel velit totam, optio nesciunt accusamus reiciendis enim vero amet.</p>
-
+                <iframe class="tabcontent-iframe" src="iframes/presentation/">
+                </iframe>
             </section>
 
             <section class="tabcontent" id="Hobbies">
                 <!--*Hobbies page-->
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere laudantium maiores numquam beatae eius tenetur inventore sit illo nulla. Velit suscipit placeat asperiores voluptatum harum vitae ad deserunt dolor dolorem, animi dolore ratione sunt quae maiores doloribus facere nesciunt? Unde vel velit totam, optio nesciunt accusamus reiciendis enim vero amet.</p>
-
+                <iframe class="tabcontent-iframe" src="iframes/hobbies/">
+                </iframe>
             </section>
 
             <section class="tabcontent" id="Other">
                 <!--*Other infos page-->
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere laudantium maiores numquam beatae eius tenetur inventore sit illo nulla. Velit suscipit placeat asperiores voluptatum harum vitae ad deserunt dolor dolorem, animi dolore ratione sunt quae maiores doloribus facere nesciunt? Unde vel velit totam, optio nesciunt accusamus reiciendis enim vero amet.</p>
-
+                <iframe class="tabcontent-iframe" src="iframes/other/">
+                </iframe>
             </section>
+
+            <section class="tabcontent" id="Career">
+                <!--*Career page-->
+                <iframe class="tabcontent-iframe" src="iframes/career/">
+                </iframe>
+            </section>
+
+            <secrion class="tabcontent" id="Programming">
+                <!--*Programming career-->
+                <iframe class="tabcontent-iframe" src="iframes/programming/programming.html">
+                </iframe>
+            </secrion>
         </main>
 
         <footer>
