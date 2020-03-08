@@ -10,6 +10,7 @@ body, html {
 
 /*#region HEADER*/
 
+/*First grey row*/
 header {
     /*TODO: choose some fonts*/
     background-color: #999;
@@ -21,6 +22,7 @@ header {
     align-content: center;
 }
 
+/*Paul Marchal*/
 header h1 {
     display: flex;
     align-items: center;
@@ -28,6 +30,7 @@ header h1 {
     margin: 10px;
 }
 
+/*Logo*/
 header img {
     /*TODO: choose a logo*/
     margin-left: auto;
@@ -45,6 +48,7 @@ nav {
     align-items: stretch;
 }
 
+/*Buttons on second row*/
 .tablink{
     background-color: #ccc;
     color: black;
@@ -77,6 +81,7 @@ main{
     height: 80%;
 }
 
+/*Center content selected by above buttons */
 .tabcontent{
     padding: 20px;
     height: 100%;
@@ -94,6 +99,7 @@ main{
 
 /*#region FOOTER*/
 
+/**/
 footer{
     background-color: #999;
     position: fixed;
