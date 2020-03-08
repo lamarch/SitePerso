@@ -55,8 +55,12 @@ nav {
     border-bottom: 3px solid transparent;
 }
 
+.tablink-selected {
+    background-color: #999;
+}
+
 .tablink:hover{
-    background-color: #aaa;
+    background-color: #eee;
     border-bottom: red 3px solid;
 }
 
@@ -95,6 +99,11 @@ footer{
     width: 100%;
     text-align: center;
     padding: 15px;
+    font-size: 13px;
+}
+
+footer hr {
+    margin: 10px;
 }
 
 /*#endregion*/
