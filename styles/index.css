@@ -6,14 +6,19 @@
 body, html {
     height: 100%;
     font-family: Arial;
-  }
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
 
 /*#region HEADER*/
 
 /*First grey row*/
 header {
-    /*TODO: choose some fonts*/
-    background-color: #999;
+background: rgb(196, 196, 196);
+background: linear-gradient(90deg, rgba(196, 196, 196, 1) 0%, rgba(126, 126, 126, 1) 100%);
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -28,11 +33,24 @@ header h1 {
     align-items: center;
     justify-content: center;
     margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 2px #ccc;
+    transition: all .3s ease 0s;
+}
+
+header h1:hover, 
+header h1:focus{
+    font-size: 2.5em;
+    color: #222;
+    text-shadow: 5px 5px 3px #ccc;
+    margin-left: 50px;
 }
 
 /*Logo*/
 header img {
-    /*TODO: choose a logo*/
+    width: 120px;
+    height: 120px;
+    padding: 10px;
     margin-left: auto;
 }
 
@@ -46,6 +64,7 @@ nav {
     flex-wrap: wrap;
     justify-content: stretch;
     align-items: stretch;
+    background-color: #ccc;
 }
 
 /*Buttons on second row*/
@@ -55,20 +74,23 @@ nav {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 15px;
-    font-size: 19px;
+    padding: 10px;
+    font-size: 15px;
     transition: .3s;
-    border-bottom: 3px solid transparent;
+    border: 3px solid transparent;
     flex: 1;
 }
 
 .tablink-selected {
+    border-top: red 5px solid;
+
     background-color: #999;
 }
 
 .tablink:hover{
     background-color: #eee;
-    border-bottom: red 3px solid;
+    border-top: red 3px solid;
+    border-radius: 0px;
 }
 
 /*#endregion*/
@@ -80,6 +102,12 @@ nav {
 main{
     height: 80%;
 }
+
+
+iframe{
+    border:none;
+}
+
 
 /*Center content selected by above buttons */
 .tabcontent{
@@ -109,9 +137,7 @@ main{
 /**/
 footer{
     background-color: #999;
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    align-self: flex-start;
     width: 100%;
     text-align: center;
     padding: 15px;
