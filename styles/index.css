@@ -1,3 +1,12 @@
+
+/*
+! root is accessible from anywhere
+*/
+:root {
+    --main-color: #1111f4;
+    --second-color: #7070f8;
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -17,8 +26,7 @@ body{
 
 /*First grey row*/
 header {
-background: rgb(196, 196, 196);
-background: linear-gradient(90deg, rgba(196, 196, 196, 1) 0%, rgba(126, 126, 126, 1) 100%);
+    background: var(--main-color);
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -33,18 +41,11 @@ header h1 {
     align-items: center;
     justify-content: center;
     margin: 10px;
+    color: #eee;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-shadow: 2px 2px 2px #ccc;
-    transition: all .3s ease 0s;
 }
 
-header h1:hover, 
-header h1:focus{
-    font-size: 2.5em;
-    color: #222;
-    text-shadow: 5px 5px 3px #ccc;
-    margin-left: 50px;
-}
 
 /*Logo*/
 header img {
@@ -74,22 +75,25 @@ nav {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 10px;
+    padding: 5px 0;
     font-size: 15px;
+    font-weight: 550;
     transition: .3s;
-    border: 3px solid transparent;
+    border: 4px solid transparent;
     flex: 1;
 }
 
 .tablink-selected {
-    border-top: red 5px solid;
-
-    background-color: #999;
+    border-top: 4px solid #fff;
+    color: #fff;
+    background-color:var(--second-color);
 }
 
 .tablink:hover{
-    background-color: #eee;
-    border-top: red 3px solid;
+    background-color: var(--main-color);
+    color: #fff;
+    border-top: solid 4px transparent;
+    border-bottom: #fff 4px solid;
     border-radius: 0px;
 }
 
@@ -100,32 +104,20 @@ nav {
 /*TODO: Add main style*/
 
 main{
-    height: 80%;
+    height:100%;
 }
-
-
-iframe{
-    border:none;
-}
-
 
 /*Center content selected by above buttons */
 .tabcontent{
-    padding: 20px;
+    padding: 0px;
     height: 100%;
     width: 100%;
     margin: 0;
-    overflow: hidden;
+    background-color: var(--second-color);
 }
 
-#Home {background-color: red;}
-#Presentation {background-color: green;}
-#Hobbies {background-color: blue;}
-#Other {background-color: orange;}
-#Programming {background-color: grey;}
-#Career {background-color: black;}
-
 .tabcontent-iframe {
+        border:none;
     width: 100%;
     height: 100%;
 }
@@ -136,16 +128,21 @@ iframe{
 
 /**/
 footer{
-    background-color: #999;
+    background-color: var(--main-color);
     align-self: flex-start;
     width: 100%;
     text-align: center;
-    padding: 15px;
+    padding: 5px;
     font-size: 13px;
+    color: #ccc;
+}
+
+footer a{
+    color: #fff;
 }
 
 footer hr {
-    margin: 10px;
+    margin: 5px;
 }
 
 /*#endregion*/
