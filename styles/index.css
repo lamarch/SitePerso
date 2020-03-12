@@ -18,8 +18,7 @@ body, html {
 }
 
 body{
-    display: flex;
-    flex-direction: column;
+
 }
 
 /*#region HEADER*/
@@ -40,7 +39,6 @@ header h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px;
     color: #eee;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-shadow: 2px 2px 2px #ccc;
@@ -49,8 +47,7 @@ header h1 {
 
 /*Logo*/
 header img {
-    width: 120px;
-    height: 120px;
+    width: 60px;
     padding: 10px;
     margin-left: auto;
 }
@@ -104,13 +101,13 @@ nav {
 /*TODO: Add main style*/
 
 main{
-    height:100%;
+    background-color: var(--second-color);
+    min-height: 100%;
 }
 
 /*Center content selected by above buttons */
 .tabcontent{
     padding: 0px;
-    height: 100%;
     width: 100%;
     margin: 0;
     background-color: var(--second-color);
@@ -128,13 +125,17 @@ main{
 
 /**/
 footer{
+    display: block;
+    position: static;
+    left:0;
+    bottom:0;
     background-color: var(--main-color);
-    align-self: flex-start;
     width: 100%;
     text-align: center;
     padding: 5px;
     font-size: 13px;
     color: #ccc;
+    align-self: flex-end;
 }
 
 footer a{

@@ -1,0 +1,40 @@
+.tabcontent {
+    padding: 20px;
+}
+
+.tabcontent h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 5px;
+    text-shadow: 2px 2px 1px black;
+    border-color: var(--main-color);
+    border-radius: 5px; 
+    padding: 10px;
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.tabcontent h2{
+    padding-left: 30px;
+    font-size: 22px;
+    text-decoration:underline dotted;
+}
+
+.tabcontent h3 {
+    padding-left: 30px;
+}
+
+.tabcontent p, .tabcontent li {
+    margin: 10px;
+    padding: 10px;
+    background-color: #9191fa;
+    border-radius: 10px;
+}
+
+.tabcontent image {
+    
+}
+
+.tabcontent li{
+    margin: 10px;
+}

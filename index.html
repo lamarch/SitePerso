@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
     <head>
+        <meta charset="utf-8">
         <title>
             Paul Marchal
         </title>
-        <link rel="stylesheet"type="text/css" href="styles/index.css"> 
+        <meta name="description" content="Site Web de Paul Marchal">
+        <link rel="stylesheet" type="text/css" href="styles/index.css"> 
+        <link rel="stylesheet" type="text/css" href="styles/content.css">
         <link rel="shortcut icon" type="image/jpg" href="favicon.png">
     </head>
 
@@ -13,67 +16,159 @@
         <header>
             <!--!Put here the title & logo-->
             <h1><span><image src="favicon.png"></image></span>aul Marchal</h1>
-            <!--img src="img/logo.webp"/-->
         </header>
 
         <nav>
             <!--!Put here the links to other pages-->
-            <!--*The page design will be based on full page tabs from https://www.w3schools.com/howto/howto_js_full_page_tabs.asp-->
 
-            <button class="tablink" id="defaultOpen" onclick="openPage('Home', this)">Accueil</button>
-            <button class="tablink" onclick="openPage('Presentation', this)">Présentation</button>
-            <button class="tablink" onclick="openPage('Career', this)">Parcours scolaire & professionnel</button>
-            <button class="tablink" onclick="openPage('Hobbies', this)">Passions</button>
-            <button class="tablink" onclick="openPage('Programming', this)">Programmation</button>
-            <button class="tablink" onclick="openPage('Other', this)">Autres</button>
+            <!--*This is nav menu (top page)-->
+            <button class="tablink tablink-default tablink-home" onclick="openPage('s-home', this)">Accueil</button>
+            <button class="tablink tablink-presentation" onclick="openPage('s-presentation', this)">Présentation</button>
+            <button class="tablink tablink-career" onclick="openPage('s-career', this)">Parcours scolaire & professionnel</button>
+            <button class="tablink tablink-hobbies" onclick="openPage('s-hobbies', this)">Passions</button>
+            <button class="tablink tablink-programming" onclick="openPage('s-programming', this)">Programmation</button>
+            <button class="tablink tablink-other" onclick="openPage('s-other', this)">Autres</button>
         </nav>
 
         <main>
             <!--!Put here main content of the page in <section> & <article> -->
                 
-            <section class="tabcontent" id="Home">
+            <section class="tabcontent" id="s-home">
                 <!--*Home page-->
-                <iframe class="tabcontent-iframe" src="iframes/home/home.html">
-                </iframe>
+                <h1>Bienvenue sur mon site !</h1>
+                <h2>Petite présentation</h2>
+                <p> Je m'appelle Paul Marchal et je vous souhaite la bienvenue sur mon petit site web. Je l'ai créé à
+                    l'occasion d'un projet en SNT.</p>
+
+                <h2>Les pages</h2>
+                <p>
+                    Vous trouverez quelques pages plus détaillées sur moi sur ce site web :
+                </p>
+                <ul>
+                    <li>
+                        Accueil : c'est celle sur laquelle vous vous trouvez actuellement
+                    </li>
+                    <li>
+                        <a href="#" onclick="openPageButton('tablink-presentation')">Présentation</a> : c'est une page
+                        qui approfondie ma présentation sur des choses diverse et variées...
+                    </li>
+                    <li>
+                        <a href="#" onclick="openPageButton('tablink-career')">Parcours</a> : celle ci retrace le
+                        (petit) parcours professionnel et scolaire que j'ai fait jusqu'à aujourd'hui.
+                    </li>
+                    <li>
+                        <a href="#" onclick="openPageButton('tablink-hobbies')">Passions</a> : celle là vous présente
+                        mes passions (programmation, histoire, jeux-vidéo, sports...)
+                    </li>
+                    <li>
+                        <a href="#" onclick="openPageButton('tablink-programming')">Programmation</a> : une page bien
+                        importante
+                        qui vous montre mon talent en dev.
+                    </li>
+                    <li>
+                        <a href="#" onclick="openPageButton('tablink-other')">Autre</a> : la page classique qui se
+                        trouve sur tout les sites, contacts, à propos...
+                    </li>
+                </ul>
             </section>
 
-            <section class="tabcontent" id="Presentation">
+            <section class="tabcontent" id="s-presentation">
                 <!--*Presentation page-->
-                <iframe class="tabcontent-iframe" src="iframes/presentation/.html">
-                </iframe>
+                <h1>je me présente</h1>
+                <p>
+                    Je m'appelle Paul, je suis né le 18 février 2004 (à 1h10). J'ai donc 16 ans maintenant.
+                    J'habite à Réchicourt-La-Petite, en Meurthe-Et-Moselle (Lorraine).
+                </p>
             </section>
 
-            <section class="tabcontent" id="Hobbies">
+            <section class="tabcontent" id="s-hobbies">
                 <!--*Hobbies page-->
-                <iframe class="tabcontent-iframe" src="iframes/hobbies/.html">
-                </iframe>
+
             </section>
 
-            <section class="tabcontent" id="Other">
+            <section class="tabcontent" id="s-other">
                 <!--*Other infos page-->
-                <iframe class="tabcontent-iframe" src="iframes/other/.html">
-                </iframe>
+
             </section>
 
-            <section class="tabcontent" id="Career">
+            <section class="tabcontent" id="s-career">
                 <!--*Career page-->
-                <iframe class="tabcontent-iframe" src="iframes/career/.html">
-                </iframe>
+
             </section>
 
-            <secrion class="tabcontent" id="Programming">
+            <secrion class="tabcontent" id="s-programming">
                 <!--*Programming career-->
-                <iframe class="tabcontent-iframe" src="iframes/programming/.html">
-                </iframe>
+
+                <h1>Mes capacités en programmation</h1>
+                <p>Je vais tout d'abord présenter les langages de programmations que j'ai pu essayer :</p>
+                <br/>
+                <ol>
+                    <li>
+                        <img width="50" height="50" src="img/c-sharp-c-logo-02F17714BA-seeklogo.com.png" alt="c#"/><br/>
+                        <p>
+                            C'est mon langage préféré par dessus tout. Je l'adore et je le connais très bien, même les
+                            concepts complexes tels que la programmation <strong>asynchrone</strong>(await - async),
+                            <strong>POO</strong>
+                            (héritage, polymorphisme, Overloads...), <strong>LINQ</strong>, <strong>ClickOnce</strong>,
+                            <strong>WPF</strong>,
+                            <strong>WindowsForms</strong>,
+                            <strong>Templates</strong>. Je
+                            ne dénombre même plus le nombre d'heures que j'ai passé à m'en servir.
+                        </p>
+                    </li>
+                    <li>
+                        <img width="50" height="50" src="img/python-logo.png" alt="python"/>
+                        <p>
+                            C'est un langage que j'utilise régulièrement, mais c'est loin d'être mon préféré : Je le trouve trop &quot; simplet &quot; mais j'avoue qu'il est quand même bien pratique.
+                        </p>
+                    </li>
+                    <li>
+                        <img width="50" height="50" src="img/1200px-ISO_C++_Logo.svg.png" alt="c++"/>
+                        <p>
+                            Je trouve ce langage très puissant et très interessant. Je m'y suis un peu frotté et il me plait beaucoup !
+                        </p>
+                    </li>
+                    <li>
+                        <img width="50" height="50" src="img/blue-and-white-c-logo-png-clip-art.png" alt="c"/>
+                        <p>
+
+                    </li>
+                    <li>Assembleur</li>
+                    <li>JS</li>
+                    <li>Autoit</li>
+                    <li>rust</li>
+                    <li>VB .Net</li>
+                    <li>Perl</li>
+                    <li>Ruby</li>
+                </ol>
+                <br/>
+                <p>Je connais également ces langages de descriptions de données :</p>
+                <ul>
+                    <li>
+                        HTML
+                    </li>
+                    <li>
+                        CSS
+                    </li>
+                    <li>
+                        JSON
+                    </li>
+                    <li>
+                        XML
+                    </li>
+                    <li>
+                        YAML
+                    </li>
+                    <li>
+                        Binaire
+                    </li>
+                </ul>
             </secrion>
         </main>
 
         <footer>
             <!--!Put here the footer content-->
-            <p>Les sources sont disponibles sur <a href="https://github.com/lamarch/SitePerso">GitHub</a> </p>
-            <hr/> 
-            <p>Paul Marchal - Tout droits réservés</p>
-        </footer>
+            <p>Paul Marchal - Les sources sont disponibles sur <a href="https://github.com/lamarch/SitePerso">GitHub</a></p>        </footer>
 
         <script src="scripts/main.js"></script>
     </body>
